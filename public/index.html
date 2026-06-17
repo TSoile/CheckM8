@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<title>Check-ins</title>
+<title>Pact</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -364,7 +364,7 @@ nav button.active{color:var(--accent2);border-bottom-color:var(--accent2);}
 <div class="modal-bg" id="modal-answer">
   <div class="sheet">
     <div class="sheet-handle"></div>
-    <div class="sheet-label" id="answer-label">Daily check-in</div>
+    <div class="sheet-label" id="answer-label">Pact</div>
     <div class="sheet-title" id="answer-q"></div>
     <div class="sheet-btns">
       <button class="btn-no" onclick="submitAnswer('no')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>No</button>
@@ -599,7 +599,7 @@ function renderQuestions() {
 // ── Answer modal (personal + challenge) ───────────────────
 function openPersonalAnswer(id, text) {
   currentAnswerCtx = { type: 'personal', id, text };
-  document.getElementById('answer-label').textContent = 'Daily check-in';
+  document.getElementById('answer-label').textContent = 'Pact';
   document.getElementById('answer-q').textContent = text;
   openModal('modal-answer');
 }

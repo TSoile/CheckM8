@@ -1,7 +1,7 @@
 {
-  "name": "Daily Check-ins",
-  "short_name": "Check-ins",
-  "description": "Yes/No reminder questions at custom times",
+  "name": "Pact",
+  "short_name": "Pact",
+  "description": "Daily habits and challenges with friends",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f0f13",

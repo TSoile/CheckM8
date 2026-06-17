@@ -15,7 +15,7 @@ function scheduleLocal(q) {
   if (fire <= now) fire.setDate(fire.getDate() + 1);
 
   timers[q.id] = setTimeout(async () => {
-    await self.registration.showNotification('Daily Check-in', {
+    await self.registration.showNotification('Pact', {
       body:      q.text,
       icon:      '/icon-192.png',
       badge:     '/icon-192.png',
@@ -39,7 +39,7 @@ self.addEventListener('message', e => {
 self.addEventListener('push', e => {
   const data = e.data?.json() || {};
   e.waitUntil(
-    self.registration.showNotification(data.title || 'Daily Check-in', {
+    self.registration.showNotification(data.title || 'Pact', {
       body:     data.body,
       icon:     data.icon     || '/icon-192.png',
       badge:    data.badge    || '/icon-192.png',
