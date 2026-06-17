@@ -283,7 +283,7 @@ cron.schedule('* * * * *', async () => {
 
     // Personal questions at their set time
     for (const q of questions) {
-      if (q.time === localTime) await send(`q-${q.id}`, 'Pact', q.text);
+      if (q.time === localTime) await send(`q-${q.id}`, 'CheckM8', q.text);
     }
 
     // Challenge reminders at 9:00 AM local time
